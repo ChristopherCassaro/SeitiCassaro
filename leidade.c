@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 
 int leidade (){
@@ -11,12 +10,16 @@ int i;
     }
     return i;
 }
+int abs (int x) {
+  if (x < 0) x = (-1)* x;
+  return x;
+}
 int main() {
     int id1, id2;
     id1 = leidade();
     id2 = leidade();
     
-    printf ("dif = " "%d", id1 - id2);
+    printf ("dif = %d", abs (id1 - id2));
     return 0;
 }
 
